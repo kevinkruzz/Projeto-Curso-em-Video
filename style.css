@@ -1,0 +1,275 @@
+@font-face{
+    font-family: 'minhafonte';
+    src: url(fontes/idroid.otf);
+}
+@font-face{
+    font-family: "Roboto Condensed-LIGHT";
+    src: url(fontes/RobotoCondensed-ExtraLight.ttf);
+}
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #90A19D;
+    height: 100% ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.interface{
+    max-width: 1280px;
+    margin: auto;
+}
+.side-left{
+    font-family: 'minhafonte',sans-serif;
+    padding: 10px;
+    margin-left: -30px;
+    background-color: #90A19D;
+    width: 500px;
+    border-bottom-right-radius: 30px;
+}
+.side-left-2{
+    font-family: 'minhafonte',sans-serif;
+    padding: 10px;
+    margin-left: -30px;
+    background-color: #90A19D;
+    width: 300px;
+    border-bottom-right-radius: 30px;
+}
+.side-left-3{
+    font-family: 'minhafonte';
+    margin-top: 15px;
+    padding: 10px;
+    margin-left: -30px;
+    background-color: #90A19D;
+    width: 380px;
+    border-bottom-right-radius: 30px;
+}
+/* TOPO DO SITE */
+header{
+    background-image: linear-gradient(to bottom, #196774, #afafaf77 );
+    color: rgb(255, 253, 253);
+    box-shadow: 0 10px 15px #fbfcfc;
+}
+header{
+    background-image: url(imagens/tech.png);
+}
+
+.topo-do-site h1{
+    background-color: #183f462c;
+    border-radius: 15px;
+    margin: auto;
+    width: 550px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Roboto Condensed-LIGHT",sans-serif;
+    
+}
+.topo-do-site .sub-title{
+    background-color: #183f4631;
+    border-radius: 10px;
+    width: 450px;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto Condensed-LIGHT",sans-serif;
+
+}
+.menu ul{
+    display:flex;
+    list-style: none;
+    margin-right: 290px;
+    gap: 3px;
+    text-align: right;
+    justify-content: right;
+    padding-bottom: 10px;
+    
+}
+.menu ul a{
+    background-color: #f6f6f7;
+    text-decoration: none;
+    color: rgb(14, 0, 0);
+    padding: 5px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.menu ul a:hover{
+    background-color: #10424b;
+    color: #ffffff;
+}
+/* CORPO DO SITE*/
+main{
+    background-color: white;
+    padding: 10px 30px;
+}
+main p {
+    margin: 15px 0;
+    text-indent: 15px;
+    text-align: justify;
+    font-size: 18px;
+}
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color:#183f4644;
+    box-shadow:  2px 2px 8px  rgb(32, 32, 32);
+    border-radius: 20px;
+}
+picture .robo-pequeno{
+    display: none;
+}
+picture .foto-vertical{
+    display: none;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    background-color:#196774 ;
+}
+.video-container iframe{
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+}
+/*ULTIMA PARTE  */
+section.information{
+    background-color: #c7ccccbd;
+    border-radius: 30px;
+    padding: 0 15px;
+    padding-bottom: 10px;
+}
+.information .info{
+    background-color: #196774;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    width: 200px;
+    margin-left: -15px;
+    border-bottom-right-radius: 30px;
+}
+section .android-container{
+    padding: 10px;
+    display: flex;
+    margin-left: 200px;
+    gap: 200px;
+    background-color: white;
+    width: 700px;
+}
+section .android-container ul li{
+  font-size: 20px;
+  list-style:none ;
+}
+.androids{
+    padding: 10px;
+    
+}
+.androids2{
+    padding: 10px;
+}
+section.information a{
+    text-decoration: none;
+    color: #196774;
+
+}
+section.information a:hover{
+    background-color: #10424b;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+main a{
+    text-decoration: none;
+    color: #196774;
+}
+main a:hover{
+    background-color: #10424b;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+/*ESTILO RODAPE*/
+footer{
+    background-color:#196774;
+    padding: 10px 0;
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto Condensed",sans-serif
+}
+/*MENU MOBILE*/
+@media screen and (max-width: 1020px){
+    
+    .topo-do-site h1{
+        border-radius: 15px;
+        margin-top: 10px;
+        margin-right: 300px;
+        width: 400px;
+        font-size: 40px;
+    }
+    .topo-do-site .sub-title{
+        width: 350px;
+        margin: auto;
+        font-size: 20px;
+    }
+    .menu ul{
+        margin-top: 18px;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+        width: 390px;
+        font-size: 14px;
+
+    }
+    .menu ul a{
+        font-weight: 300;
+        border-radius: 5px;
+    }
+    .side-left{
+        padding: 10px;
+        margin-left: -30px;
+        width: 300px;
+        font-size: 20px;
+    }
+    .side-left-2{
+        font-size: 20px;
+        width: 240px;
+    }
+    picture .robo-grande{
+        display: none;
+    }
+    picture .robo-pequeno{
+        display: block;
+        width: 345px;
+    }
+    picture .foto-horizontal{
+        display: none;
+    }
+    picture .foto-vertical{
+        display: block;
+        width: 300px;
+        border-radius: 10px;
+    }
+    .video-container iframe{
+        padding: 20px;
+        width: 550px;
+        height: 200px;
+    }
+    section .android-container{
+
+        margin-left: -6px;
+        gap: 10px;
+        width: 290px;
+    }
+    section .android-container ul li{
+        font-size: 13px;
+      }
+}
